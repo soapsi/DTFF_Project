@@ -1,0 +1,46 @@
+\documentclass[a4paper,english,11pt,notitlepage]{article}
+\special{papersize=210mm,297mm}
+
+%%
+ %  Preamble
+ %%
+\include{Preamble}
+
+
+%%
+ %  Document 
+ %%
+\begin{document}
+\include{TitlePage}						% Titlepage Uni
+\newpage
+\pagenumbering{Roman}
+\renewcommand{\baselinestretch}{1.25}\normalsize
+
+%\include{Acknowledgements}
+
+		% Executive Summary
+
+
+
+\include{TOCLists}		%	Table of Contents, List of Figures, List of Tables, List of Abbreviations
+\pagenumbering{arabic}
+
+\include{Section}
+%%
+ %  Bibliography
+ %%
+\newpage
+\bibliographystyle{plain}
+\bibliography{library}
+
+
+%%
+%  Appendix
+%%
+%\appendix
+%\ifwritingprog 								% wird nur ohne Testlauf integriert
+ \setcounter{secnumdepth}{0}
+%	\include{Appendix}
+%\fi
+
+\end{document}
