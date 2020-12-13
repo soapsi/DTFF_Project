@@ -1,0 +1,167 @@
+%%
+ % Packages 
+ %%
+ \usepackage{ragged2e} 
+ \usepackage{subscript}
+ \usepackage[final]{pdfpages}
+ \usepackage{epstopdf}
+ \includepdfset{pages=-,noautoscale}
+\usepackage{url}
+
+\usepackage[export]{adjustbox}			
+
+% Mathe Packages
+\usepackage{amsmath,amssymb,epsfig,amsthm,amsfonts,bbm,textcomp,bm}
+
+% Grafiken
+\usepackage{graphicx,wrapfig}
+\usepackage[font=small,aboveskip=0pt,belowskip=0pt,labelfont=bf]{caption}
+\captionsetup[table]{labelsep=period}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% Sprache Windows / deutsch
+\usepackage[ansinew]{inputenc}
+\usepackage{babel}				
+
+% Layout
+\usepackage{a4}
+
+\usepackage{enumitem}%letters enumaration list 
+\usepackage{setspace}
+\usepackage{lscape} % Landscape
+\usepackage{xcolor} %
+\definecolor{darkgreen}{RGB}{0,153,76}
+%\usepackage{ragged2e}
+\usepackage{parskip}
+
+% Fussnoten
+\usepackage[flushmargin,hang,bottom,stable,multiple]{footmisc}
+\usepackage{listings} 			% Code und so
+%\usepackage[breaklinks]{hyperref}				% aktivieren fuer letzten Durchgang - gibt zwar eine Warnung, doch sind Zeilen schoen gebrochen
+\usepackage{hyperref}
+
+% PDF-Informationen
+\hypersetup{
+    colorlinks=true,
+    citecolor=black,
+    urlcolor=black,
+    linkcolor=black,
+    linktoc=page,
+    pdftitle={The Value of Dividend Growth Models in the Swiss Stock Market},
+    pdfsubject={Master's Thesis in Banking and Finance},
+    pdfkeywords={Corporate Payout} {Dividend} {Portfolio Choice} {Swiss Stock Market} 
+    pdfauthor={Anja Zgraggen}
+}
+
+% Tabellen
+\usepackage{longtable} 			% Lange, mehrseitige Tabelle
+\usepackage{tabularx}    		% Package used to make variable width-columns, i.e.,
+\usepackage{rotating}
+\usepackage{array}      				% column widths are changed to fit the maximum width
+                            % and text is wrapped nicely.
+\usepackage{array,hhline}
+\usepackage{booktabs}				% Linien zwischen Zeilen 
+\usepackage{multirow}				% Verknüpfe Zellen über Zeilen hinweg
+\usepackage{dcolumn}				% Erlaubt variable Orientierung am Decimalpunkt innerhalb einer Zelle
+\newcolumntype{.}{D{.}{.}{1}}
+\usepackage{makecell}
+\linespread{1.1}
+
+
+% References Teil
+\usepackage{natbib}
+\usepackage{ifthen} 				% Fuer Probekompilation und Zeitersparnis
+
+% Umgebungsvariablen
+\setcounter{secnumdepth}{5} % macht, dass alle Ueberschriften nummeriert werden
+
+% Command Abkürzungen
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ben}{\begin*{equation}}
+\newcommand{\een}{\end*{equation}}
+\newcommand{\E}{\mathbb E}
+\makeatletter
+\newcommand{\thickhline}{%
+	\noalign {\ifnum 0=`}\fi \hrule height 1pt
+	\futurelet \reserved@a \@xhline
+}
+\newcolumntype{"}{@{\hskip\tabcolsep\vrule width 1pt\hskip\tabcolsep}}
+\makeatother
+
+
+
+\setlength{\abovecaptionskip}{0.1cm}
+\setlength{\belowcaptionskip}{-2mm}
+
+% Seiten Layout
+\usepackage{float} 					% Um Veränderungen am Textumbruch um Abbildungen zu verhindern
+\usepackage[bottom=1.0in,top=1.0in,left=2.0cm,right=2.0cm]{geometry}  
+														% Seitenaufbau
+
+% Numbering
+
+\renewcommand{\thetable}{\Roman{table}} 
+\makeatletter
+% Punkt nach Sektion, aber nicht in Zitaten 
+%\renewcommand{\@seccntformat}[1]{{\csname the#1\endcsname}.\hspace{0.5em}}
+\long\def\@makefigcaption#1#2{%
+ \vskip\abovecaptionskip
+ \sbox\@tempboxa{\textbf{#1.} #2}%
+ \ifdim \wd\@tempboxa >\hsize
+ \textbf{#1.} #2\par
+ \else
+  \global \@minipagefalse
+  \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+ \fi
+ \vskip\belowcaptionskip} 
+
+% Float fuer Figures
+\renewcommand{\figure}{\let\@makecaption\@makefigcaption\@float{figure}}
+
+% Lange Beschreibung fuer Figures
+\long\def\@maketblcaption#1#2{%
+ \vskip\abovecaptionskip
+ \begin{center}\normalsize\textbf{#1. #2}\end{center} %\begin{center}\small\bf#1 \\\normalsize#2\end{center}
+ 
+ \vskip\belowcaptionskip} 
+
+% Float fuer Tables
+\renewcommand{\table}{\let\@makecaption\@maketblcaption\@float{table}}
+\makeatother
+
+
+\usepackage[margin=10pt, font=small, labelfont=bf, labelsep=endash]{caption}%To costumize caption captionposition not working
+%\usepackage{floatrow} %to have the caption on top
+
+
+
+% Footnotes
+\makeatletter
+\newlength{\myFootnoteWidth}
+\newlength{\myFootnoteLabel}
+\setlength{\myFootnoteLabel}{1.2em} % <-- can be changed to any valid value
+\renewcommand{\@makefntext}[1]{%
+ \setlength{\myFootnoteWidth}{\columnwidth}%
+ \addtolength{\myFootnoteWidth}{-\myFootnoteLabel}%
+ \noindent\makebox[\myFootnoteLabel][r]{\@makefnmark\ }%
+ \parbox[t]{\myFootnoteWidth}{#1}%
+}
+\makeatother
+
+
+% Abbildung Platz fuellen
+\makeatletter
+\newcommand\wrapfill{\par
+\ifx\parshape\WF@fudgeparshape
+\nobreak
+\vskip-\baselineskip
+\vskip\c@WF@wrappedlines\baselineskip
+\allowbreak
+\WFclear
+\fi
+}
+\makeatother
+
+% Theoreme
