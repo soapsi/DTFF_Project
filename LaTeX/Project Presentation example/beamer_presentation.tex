@@ -117,9 +117,15 @@ University of Zurich \\ % Your institution for the title page
 \subsection{Graph}
 \begin{frame}
 \frametitle{Price change for E.ON}
-\begin{center}
+	\begin{figure}[H]
 	\includegraphics[scale=0.35]{images/Stock_Eon.png}
-\end{center}
+	\vspace{2mm}
+	\caption[Price change for E.ON]{{\footnotesize \textbf{Conversion of quarterly data into monthly}. 
+		{Source: Own depiction based on Quandl data.}}}
+	\normalsize
+	\label{fig:change_into_monthly}
+\end{figure}
+
 \end{frame}
 
 %------------------------------------------------
@@ -150,7 +156,7 @@ University of Zurich \\ % Your institution for the title page
 		AT\&T& Bellsouth& March 6\textsuperscript{th}, 2006\\
 		Worldcom& MCI& November 10\textsuperscript{th}, 1997\\ \hline
 	\end{tabular}
-	\caption{Announcement days}
+	\caption{\footnotesize \textbf{Announcement days.} {\footnotesize Source: Own depiction.}}
 	\label{aanounce}
 \end{table}
 \end{frame}
@@ -159,12 +165,15 @@ University of Zurich \\ % Your institution for the title page
 \subsection{Question 2}
 \begin{frame}
 \frametitle{CAR's}
-\begin{figure}[H]
-	\centering
+	\begin{figure}[H]
 	\includegraphics[scale=0.35]{images/Bild1.png}
-	\caption{Target firms}
-	\label{bildlitargets}
+	\vspace{2mm}
+	\caption[Target Firms]{{\footnotesize \textbf{Target Firms}. 
+			{Source: Own depiction.}}}
+	\normalsize
+	\label{fig:bildli}
 \end{figure}
+
 \end{frame}
 
 %------------------------------------------------
@@ -191,7 +200,7 @@ University of Zurich \\ % Your institution for the title page
 	\begin{block}{Bellsouth}
 		Bellsouth and MCI, instead
 		show that some information has been leaking prior to the announcement date, in particular if
-		we look the MCI line.\cite{p1}
+		we look the MCI line.\cite{p2}
 	\end{block}
 	
 	\begin{block}{MCI}
@@ -210,7 +219,7 @@ University of Zurich \\ % Your institution for the title page
 		\begin{enumerate}
 			\item Compute the t-stat.
 			\item Compare with significance level.
-			\item Judge if the variable being different tha n 0 is statistically significant.\cite{p1}
+			\item Judge if the variable being different tha n 0 is statistically significant.\cite{p2}
 		\end{enumerate}
 		
 		\column{.4\textwidth} % Right column and width
@@ -226,7 +235,7 @@ University of Zurich \\ % Your institution for the title page
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{images/Bild2.png}
-	\caption{Acquirer firms}
+	\caption{\footnotesize \textbf{Acquirer firms.} Source: Own depiction.}
 	\label{bildlyacqui}
 \end{figure}
 \end{frame}
@@ -239,8 +248,12 @@ University of Zurich \\ % Your institution for the title page
 \footnotesize{
 \begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
 \bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
+\newblock Mergers in practice
+\newblock \emph{The Journal of Finance} 12(3), 45 -- 678.
+
+\bibitem[Hofamnn, 2019]{p2} James Hofmann (2019)
+\newblock Abnormal Returns in M\&As
+\newblock \emph{The Journal of Finance} 12(3), 45 -- 678.
 \end{thebibliography}
 }
 \end{frame}
