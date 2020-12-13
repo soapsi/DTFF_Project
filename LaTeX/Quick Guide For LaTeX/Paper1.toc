@@ -1,8 +1,8 @@
-\contentsline {section}{\numberline {1}1. Part}{3}{}%
-\contentsline {subsection}{\numberline {1.1}Math questions}{3}{}%
-\contentsline {subsection}{\numberline {1.2}Writing style}{3}{}%
-\contentsline {section}{\numberline {2}2. Part}{4}{}%
-\contentsline {subsection}{\numberline {2.1}Table}{4}{}%
-\contentsline {subsection}{\numberline {2.2}Equation Array}{4}{}%
-\contentsline {subsection}{\numberline {2.3}Macros}{4}{}%
-\contentsline {subsection}{\numberline {2.4}Graphics}{4}{}%
+\contentsline {section}{\numberline {1}1. Part}{3}
+\contentsline {subsection}{\numberline {1.1}Math questions}{3}
+\contentsline {subsection}{\numberline {1.2}Writing style}{3}
+\contentsline {section}{\numberline {2}2. Part}{4}
+\contentsline {subsection}{\numberline {2.1}Table}{4}
+\contentsline {subsection}{\numberline {2.2}Equation Array}{4}
+\contentsline {subsection}{\numberline {2.3}Macros}{4}
+\contentsline {subsection}{\numberline {2.4}Graphics}{4}

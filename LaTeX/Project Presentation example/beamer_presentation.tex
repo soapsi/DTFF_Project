@@ -83,7 +83,7 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[Short title]{Full Title of the Talk} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[DTFF Project]{Digital Tools For Finance: Final Project} % The short title appears at the bottom of every slide, the full title is only on the title page
 
 \author{Sophia Kotsonis, Lionel Meise} % Your name
 \institute[UZH] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
@@ -110,133 +110,130 @@ University of Zurich \\ % Your institution for the title page
 %----------------------------------------------------------------------------------------
 
 %------------------------------------------------
-\section{First Section} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+\section{Use of an API} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %------------------------------------------------
 
-\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
-
+%\subsection{Subsection Example}  A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+\subsection{Graph}
 \begin{frame}
-\frametitle{Paragraphs of Text}
-Sed iaculis dapibus gravida. Morbi sed tortor erat, nec interdum arcu. Sed id lorem lectus. Quisque viverra augue id sem ornare non aliquam nibh tristique. Aenean in ligula nisl. Nulla sed tellus ipsum. Donec vestibulum ligula non lorem vulputate fermentum accumsan neque mollis.\\~\\
-
-Sed diam enim, sagittis nec condimentum sit amet, ullamcorper sit amet libero. Aliquam vel dui orci, a porta odio. Nullam id suscipit ipsum. Aenean lobortis commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero, quis commodo erat ullamcorper id.
+\frametitle{Price change for E.ON}
+\begin{center}
+	\includegraphics[scale=0.35]{images/Stock_Eon.png}
+\end{center}
 \end{frame}
 
 %------------------------------------------------
-
+\subsection{Information}
 \begin{frame}
-\frametitle{Bullet Points}
-\begin{itemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-\item Nam cursus est eget velit posuere pellentesque
-\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-\end{itemize}
+	\frametitle{Some additional information}
+	\begin{itemize}
+		\item The data was fetching from quandl.
+		\item We used an API. The code can be found in the folder Python Code \cite{p1}.
+		
+	\end{itemize}
 \end{frame}
 
-%------------------------------------------------
 
+%------------------------------------------------
+%------------------------------------------------
+\section{Case Study}
+%------------------------------------------------
+\subsection{Question 1}
 \begin{frame}
-\frametitle{Blocks of Highlighted Text}
-\begin{block}{Block 1}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-\end{block}
-
-\begin{block}{Block 2}
-Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
-\end{block}
-
-\begin{block}{Block 3}
-Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
-\end{block}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Multiple Columns}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.45\textwidth} % Left column and width
-\textbf{Heading}
-\begin{enumerate}
-\item Statement
-\item Explanation
-\item Example
-\end{enumerate}
-
-\column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
-\end{columns}
-\end{frame}
-
-%------------------------------------------------
-\section{Second Section}
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
+\frametitle{Announcement Days}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|}
+		\toprule
+		Acquirer & Target & Announcement Date \\\toprule
+		AOT& Time Warner & January 10\textsuperscript{th}, 2000 \\
+		AT\&T& Bellsouth& March 6\textsuperscript{th}, 2006\\
+		Worldcom& MCI& November 10\textsuperscript{th}, 1997\\ \hline
+	\end{tabular}
+	\caption{Announcement days}
+	\label{aanounce}
 \end{table}
 \end{frame}
 
 %------------------------------------------------
-
+\subsection{Question 2}
 \begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
+\frametitle{CAR's}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{images/Bild1.png}
+	\caption{Target firms}
+	\label{bildlitargets}
+\end{figure}
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Verbatim}
-\begin{example}[Theorem Slide Code]
-\begin{verbatim}
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}\end{verbatim}
+\begin{frame} % Need to use the fragile option when verbatim is used in the slide
+\frametitle{Information Leak}
+\begin{example}[Time Wartner]
+	The previous graph suggests that no information leaked at the time Warner Transaction.
+\end{example}
+\begin{example}[Bellsouth]
+	The previous graph suggests that some information leaked before the merger.
 \end{example}
 \end{frame}
 
 %------------------------------------------------
 
+
 \begin{frame}
-\frametitle{Figure}
-Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-%\begin{figure}
-%\includegraphics[width=0.8\linewidth]{test}
-%\end{figure}
+	\frametitle{Information Leak}
+	\begin{block}{Time Warner}
+	The graph in figure \ref{bildlitargets} suggests that no information leaked on the TimeWarner transaction. In fact, prior to the announcement date CARs of the company were stable. \cite{p1}
+	\end{block}
+	
+	\begin{block}{Bellsouth}
+		Bellsouth and MCI, instead
+		show that some information has been leaking prior to the announcement date, in particular if
+		we look the MCI line.\cite{p1}
+	\end{block}
+	
+	\begin{block}{MCI}
+		 Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus. \cite{p1}
+	\end{block}
+\end{frame}
+
+%------------------------------------------------
+\subsection{Question 3}
+\begin{frame}
+	\frametitle{Significance of the results}
+	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		
+		\column{.55\textwidth} % Left column and width
+		\textbf{Concept}
+		\begin{enumerate}
+			\item Compute the t-stat.
+			\item Compare with significance level.
+			\item Judge if the variable being different tha n 0 is statistically significant.\cite{p1}
+		\end{enumerate}
+		
+		\column{.4\textwidth} % Right column and width
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat ante purus, quis accumsan dolor.
+		
+	\end{columns}
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Citation}
-An example of the \verb|\cite| command to cite within the presentation:\\~
-
-This statement requires citation \cite{p1}.
+\begin{frame}
+\frametitle{Abnormal Returns }
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{images/Bild2.png}
+	\caption{Acquirer firms}
+	\label{bildlyacqui}
+\end{figure}
 \end{frame}
 
 %------------------------------------------------
-
+\section{References}
+\subsection{References}
 \begin{frame}
 \frametitle{References}
 \footnotesize{
@@ -249,9 +246,15 @@ This statement requires citation \cite{p1}.
 \end{frame}
 
 %------------------------------------------------
-
+\section{Questions}
+\subsection{Questions}
 \begin{frame}
-\Huge{\centerline{The End}}
+	\begin{center}
+		\Large{
+			Thank you for the attention! \\
+			Questions are welcome.}
+	\end{center}
+
 \end{frame}
 
 %----------------------------------------------------------------------------------------
