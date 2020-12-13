@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.28)  13 DEC 2020 14:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.28)  13 DEC 2020 15:44
 entering extended mode
 **./DTFF_Project.tex
 (DTFF_Project.tex
@@ -1108,83 +1108,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-<images/Stock_Eon.png, id=111, 729.72626pt x 542.025pt>
+<images/Stock_Eon.png, id=113, 729.72626pt x 542.025pt>
 File: images/Stock_Eon.png Graphic file (type png)
 <use images/Stock_Eon.png>
-Package pdftex.def Info: images/Stock_Eon.png  used on input line 6.
+Package pdftex.def Info: images/Stock_Eon.png  used on input line 8.
 (pdftex.def)             Requested size: 364.86224pt x 271.01183pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.10 \newpage
+l.14 \newpage
               [1
 
 
  <./images/Stock_Eon.png>]
-<images/Bild1.png, id=117, 552.756pt x 331.785pt>
+<images/Bild1.png, id=119, 552.756pt x 331.785pt>
 File: images/Bild1.png Graphic file (type png)
 <use images/Bild1.png>
-Package pdftex.def Info: images/Bild1.png  used on input line 37.
+Package pdftex.def Info: images/Bild1.png  used on input line 41.
 (pdftex.def)             Requested size: 414.56598pt x 248.83813pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--40
+Underfull \hbox (badness 10000) in paragraph at lines 38--44
 
  []
 
-<images/Bild2.png, id=118, 552.756pt x 331.785pt>
+<images/Bild2.png, id=120, 552.756pt x 331.785pt>
 File: images/Bild2.png Graphic file (type png)
 <use images/Bild2.png>
-Package pdftex.def Info: images/Bild2.png  used on input line 43.
+Package pdftex.def Info: images/Bild2.png  used on input line 47.
 (pdftex.def)             Requested size: 414.56598pt x 248.83813pt.
 [2 <./images/Bild1.png>] [3 <./images/Bild2.png>]
-<images/Bild3.png, id=136, 552.537pt x 331.785pt>
+<images/Bild3.png, id=138, 552.537pt x 331.785pt>
 File: images/Bild3.png Graphic file (type png)
 <use images/Bild3.png>
-Package pdftex.def Info: images/Bild3.png  used on input line 56.
+Package pdftex.def Info: images/Bild3.png  used on input line 60.
 (pdftex.def)             Requested size: 414.40173pt x 248.83813pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--59
+Underfull \hbox (badness 10000) in paragraph at lines 57--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--70
+Underfull \hbox (badness 10000) in paragraph at lines 68--74
 
  []
 
-<images/Bild4.png, id=139, 552.756pt x 331.785pt>
+<images/Bild4.png, id=141, 552.756pt x 331.785pt>
 File: images/Bild4.png Graphic file (type png)
 <use images/Bild4.png>
-Package pdftex.def Info: images/Bild4.png  used on input line 73.
+Package pdftex.def Info: images/Bild4.png  used on input line 77.
 (pdftex.def)             Requested size: 414.56598pt x 248.83813pt.
 [4 <./images/Bild3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
 [5 <./images/Bild4.png>] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
@@ -1202,10 +1202,10 @@ Package rerunfilecheck Info: File `DTFF_Project.out' has not changed.
 (rerunfilecheck)             Checksum: B5845D993F79839D2E98C5A73B72437B;466.
  ) 
 Here is how much of TeX's memory you used:
- 14303 strings out of 492970
- 217412 string characters out of 3126149
- 333443 words of memory out of 3000000
- 17751 multiletter control sequences out of 15000+200000
+ 14305 strings out of 492970
+ 217436 string characters out of 3126149
+ 333532 words of memory out of 3000000
+ 17752 multiletter control sequences out of 15000+200000
  20342 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,13n,94p,970b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1233,9 +1233,9 @@ AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
 /Users/Sophia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmti9.pfb><C:/Users/Sophia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb>
-Output written on DTFF_Project.pdf (15 pages, 828145 bytes).
+Output written on DTFF_Project.pdf (15 pages, 828637 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
+ 300 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
